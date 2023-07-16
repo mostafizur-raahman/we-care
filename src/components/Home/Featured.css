@@ -1,0 +1,38 @@
+@keyframes slide {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(25%);
+    }
+  }
+  
+  .image-animation {
+    animation: slide 3s infinite alternate;
+  }
+  @keyframes slideUpDown {
+    0% {
+      transform: translateY(-25%);
+    }
+    100% {
+      transform: translateY(25%);
+    }
+  }
+  
+  .slide {
+    animation: slideUpDown 5s infinite alternate;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .circular-animation {
+    animation: rotate 10s infinite linear;
+  }
+  
+  
