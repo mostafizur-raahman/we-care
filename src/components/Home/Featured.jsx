@@ -11,11 +11,14 @@ import telegram from '../../../public/tele-tra.png'
 import messanger from '../../../public/messanger-tra.png'
 import './Featured.css'
 import Count from "../Count/Count";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Featured = () => {
+    AOS.init();
     return (
         <div >
             <div className="lg:flex grid w-full mt-10 ">
-            <div className="lg:w-1/2 p-4 lg:p-10 space-y-3">
+            <div className="lg:w-1/2 p-4 lg:p-10 space-y-3 " data-aos="fade-left">
                 <h1 className="lg:text-5xl text-2xl font-bold">
                     Protect Your Health
                 </h1>
@@ -108,7 +111,7 @@ const Featured = () => {
                     <span className="relative invisible">Button Text</span>
                 </a>
             </div>
-            <div className="lg:w-1/2 h-[400px]">
+            <div className="lg:w-1/2 h-[400px]" data-aos="fade-right">
                 <img src={doctorTransImage} className="absolute" alt="" />
                 <img src={instragram} className="relative w-[50px]  lg:top-[90px] image-animation" alt="" />
                 <img src={telegram} className="relative w-[80px]   lg:left-[350px] slide" alt="" />

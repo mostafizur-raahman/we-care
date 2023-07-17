@@ -3,7 +3,7 @@ const Navbar = () => {
     const navList = (
         <>
             <li>
-                <Link to='/featured'>Featured</Link>
+                <Link to='/'>Featured</Link>
             </li>
             
             <li>

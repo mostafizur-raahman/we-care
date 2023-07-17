@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         element: <Main></Main>,
         children:[
           {
-            path:'featured',
+            path:'/',
             element:<Featured></Featured>
           },
           {
